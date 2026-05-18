@@ -86,3 +86,9 @@ Some future improvements for the project could include:
 ## Deployment
 
 The project was uploaded to GitHub and deployed using Vercel.
+
+## Live Website
+
+Vercel Deployment Link:
+
+https://safemeal-checker.vercel.app/
