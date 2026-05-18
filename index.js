@@ -113,8 +113,7 @@ app.post('/api/favorites', async (req, res) => {
 app.get('/api/favorites', async (req, res) => {
   const { data, error } = await supabase
     .from('favorites')
-    .select('*')
-    .order('created_at', { ascending: false });
+    .select('*');
 
   if (error) {
     return res.status(500).json({ message: 'Favorites could not be loaded.' });
