@@ -94,6 +94,7 @@ app.post('/api/favorites', async (req, res) => {
     .from('favorites')
     .insert([
       {
+        id: Date.now().toString(),
         product_name: name,
         brand: brand || 'Brand not listed',
         image: image || '',
