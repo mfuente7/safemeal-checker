@@ -1,0 +1,17 @@
+{
+  "name": "safemeal-checker",
+  "version": "1.0.0",
+  "description": "INST377 Final Project",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e '*'"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.104.1",
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}

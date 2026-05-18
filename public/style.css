@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f6f4;
+  color: #222;
+}
+
+nav {
+  background-color: #265c4b;
+  color: white;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+.hero,
+.slider-section,
+.chart-area,
+.favorites-area,
+.page-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+
+.swiper {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.swiper-slide {
+  background-color: #dceee5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #3b7d61;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #265c4b;
+}
+
+#message {
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.food-card,
+.favorite-card {
+  background-color: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.food-card {
+  cursor: pointer;
+}
+
+.food-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.good-warning {
+  color: #1d6b3a;
+  font-weight: bold;
+}
+
+.bad-warning {
+  color: #b00020;
+  font-weight: bold;
+}
+
+.favorite-card {
+  background-color: #f3f6f4;
+  margin-top: 12px;
+}
+
+.page-card {
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+}

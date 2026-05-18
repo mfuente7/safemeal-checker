@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SafeMeal Checker</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  >
+</head>
+<body>
+
+  <nav>
+    <h1>SafeMeal Checker</h1>
+
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>Check Food Labels Faster</h2>
+      <p>
+        Search for food by name or barcode and see product details,
+        allergens, and nutrition facts in a simpler way.
+      </p>
+    </section>
+
+    <section class="slider-section">
+      <h2>Common Searches</h2>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Cereal</div>
+          <div class="swiper-slide">Chips</div>
+          <div class="swiper-slide">Chocolate</div>
+          <div class="swiper-slide">Granola</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-box">
+      <input id="foodInput" type="text" placeholder="Search food name">
+      <button id="searchBtn">Search Food</button>
+    </section>
+
+    <section class="search-box">
+      <input id="barcodeInput" type="text" placeholder="Search barcode">
+      <button id="barcodeBtn">Search Barcode</button>
+    </section>
+
+    <section id="message"></section>
+
+    <section id="results"></section>
+
+    <section class="chart-area">
+      <h2>Nutrition Chart</h2>
+      <p>Click a product card to view sugar, fat, and protein.</p>
+      <canvas id="foodChart"></canvas>
+    </section>
+
+    <section class="favorites-area">
+      <h2>Saved Favorites</h2>
+      <button id="loadFavoritesBtn">Load Favorites</button>
+      <div id="favorites"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
